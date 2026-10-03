@@ -3,25 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skillwill Exam Project</title>
+  <meta name="description" content="A simple front-end project created for the Git and GitHub practical exam.">
+  <title>Skillwill Exam Project Portal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Skillwill Exam Project Portal</h1>
-  </header>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <span class="badge">FRONT-END • GIT &amp; GITHUB</span>
+        <h1>Skillwill Exam Project Portal</h1>
+        <p class="header-copy">A small responsive website demonstrating a clean HTML structure and the Git workflow used throughout the practical exam.</p>
+      </div>
+    </header>
 
-  <nav>
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Dashboard</li>
-      <li>Settings</li>
-    </ul>
-  </nav>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </nav>
 
-  <main>
-    <h2>Welcome</h2>
-    <p>This is a simple front-end project created for the Git and GitHub practical exam.</p>
-  </main>
+    <main id="home">
+      <section class="hero-card">
+        <h2>Welcome 👋</h2>
+        <p>This simple project is intentionally lightweight. It focuses on a polished front-end presentation while the Git repository demonstrates commits, branches, merges, and a resolved merge conflict.</p>
+        <div class="actions">
+          <a class="button button-primary" href="#dashboard">View dashboard</a>
+          <a class="button button-secondary" href="#about">Learn more</a>
+        </div>
+      </section>
+
+      <section class="grid" id="about" aria-label="Project highlights">
+        <article class="info-card">
+          <div class="icon">📦</div>
+          <h3>Repository</h3>
+          <p>Organized project files with a complete Git history and clear commit messages.</p>
+        </article>
+        <article class="info-card" id="dashboard">
+          <div class="icon">🌿</div>
+          <h3>Branches</h3>
+          <p>Feature branches demonstrate how changes can be developed separately and merged into main.</p>
+        </article>
+        <article class="info-card" id="settings">
+          <div class="icon">🛠️</div>
+          <h3>Conflict Handling</h3>
+          <p>The repository includes a conflict-resolution workflow that combines two navigation changes.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Skillwill Exam Project • Git &amp; GitHub Practical Exam</p>
+    </footer>
+  </div>
 </body>
 </html>
